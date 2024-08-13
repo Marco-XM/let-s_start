@@ -1,7 +1,6 @@
 #!/bin/bash
 
 git add .
-read -p "Write a message(Optional) [Default: Changes]: " message
-message = ${message:-Changes}
+read -p "Write a message(Don't be lazy and type somthing that make sens): " message
 git commit -m "$message"
 git push
